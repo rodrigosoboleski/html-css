@@ -1,0 +1,11 @@
+@charset "UTF-8";
+body{
+    background-color: salmon;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: 20px;
+}
+h1{
+    font-size: 45px;
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

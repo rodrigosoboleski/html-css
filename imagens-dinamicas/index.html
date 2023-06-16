@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Imagens em diferentes tamanhos e aparelhos</p>
+    <picture>
+        <!--Muda a imagem de acordo com o tamanho da tela do navegador.-->
+        <!-- Lembrndo de colocar em ordem (P, M, G ou G, M, P)-->
+        <source media="(max-width: 750px)" srcset="imagens/P.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/M.png" type="image/png">
+        <img src="/imagens/G.png" alt="Imagem Flexível">
+    </picture>
+</body>
+</html>
