@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+        caption{
+
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 7px;
+        }
+        .c1{
+            background-color: lightcoral;
+        }
+        .c3{
+            
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <col class="c1">
+        <col class="c2">
+        <col class="c3">
+        <thead>
+            <th scope="col">Grupos</th>
+            <th scope="col" style="width: 100px;">Nomes</th>
+            <th colspan="3" scope="colgroup">Filmes</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Maria</td>
+                <td>Titanic</td>
+                <td>Alien</td>
+                <td>Marley e Eu</td>
+            </tr>
+            <tr>
+                <td>Jessica</td>
+                <td>Spider-man</td>
+                <td>Rambo</td>
+                <td>Predador</td>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>Halo</td>
+                <td>It</td>
+                <td>Alien</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Paulo</td>
+                <td>Megamente</td>
+                <td>Monstros S.A</td>
+                <td>Rio</td>
+            </tr>
+            <tr>
+                <td>Igor</td>
+                <td>Anabelle</td>
+                <td>Poltergeits</td>
+                <td>A Freira</td>
+            </tr>
+            <tr>
+                <td>Rafael</td>
+                <td>Rambo</td>
+                <td>Pânico</td>
+                <td>M.I.B</td>
+            </tr>
+
+            <tfoot>
+                <th colspan="4" scope="row">Total</th>
+                <td>---</td>
+            </tfoot>
+        </tbody>
+    </table>
+</body>
+</html>
