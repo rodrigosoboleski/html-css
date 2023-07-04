@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 05</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        fieldset{
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário 5</h1>
+    <h2>"Checkbox e radio"</h2>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <!-- Para o "radio" o name tem que ser igual para que possa ser apenas uma checkbox -->
+            <input type="radio" name="sexo" id="isxmas" value="M"><label for="isxmas">Masculino</label><br>
+            <input type="radio" name="sexo" id="isxfem" value="F"><label for="isxfem">Feminino</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Esportes</legend>
+            <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label><br>
+            <input type="checkbox" name="esvol" id="iesvol" checked><label for="iesvol">Vôlei</label><br>
+            <input type="checkbox" name="esnat" id="iesnat"><label for="iesnat">Natação</label><br>
+            <input type="checkbox" name="esten" id="iesten"><label for="iesten">Tênis</label>
+        </fieldset>
+    </form>
+</body>
+</html>
