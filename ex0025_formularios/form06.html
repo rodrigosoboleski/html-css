@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 6</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulário 6</h1>
+    <h2>"Color, range e file"</h2>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <label for="icor">Cor:</label>
+        <input type="color" name="cor" id="icor" value="#ff0000">
+<br>
+<br>
+        <label for="inivel">Nível de Satisfação:</label>
+        <input type="range" name="nivel" id="inivel" min="1" max="5" value="1">
+<br>
+<br>
+<!-- Para usar o "input: file" o metodo tem que ser o POST-->
+        <label for="ifoto">Foto:</label>
+        <input type="file" name="foto" id="ifoto">
+<br>
+<br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+
+</body>
+
+</html>

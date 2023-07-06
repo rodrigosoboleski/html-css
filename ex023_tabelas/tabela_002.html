@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<<<<<<< HEAD
+=======
+
+>>>>>>> 95648f0fb2c2214ac2a7183a44990d33685261e9
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+<<<<<<< HEAD
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse:collapse ;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px
+            ;
+        }
+        td.num{
+            text-align: right;
+        }
+        thead{
+            background-color: lightcyan;
+        }
+        tfoot > tr > td{
+           vertical-align: middle;
+           text-align: center;
+        }
+    </style>
+</head>
+=======
+        body {
+            margin-left: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightsalmon;
+
+
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        /*--===== EFEITO ZEBRADO ===================================-*/
+        tbody>tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        tbody>tr:nth-child(even) {
+            background-color: white;
+        }
+
+        /*--===== CABEÇALHO FIXO ==================================-*/
+        thead > tr > th {
+            position: sticky;
+            background-color: gray;
+            top: -1px;
+
+        }
+        /*--=======================================================-*/
+        td.num {
+            text-align: right;
+        }
+
+        thead {
+            background-color: gray;
+        }
+
+        tfoot {
+            background-color: lightsalmon;
+        }
+
+        tfoot>tr>td {
+            vertical-align: middle;
+            text-align: center;
+        }
+    </style>
+</head>
+
+>>>>>>> 95648f0fb2c2214ac2a7183a44990d33685261e9
+<body>
+    <h1>Tabelas Grandes</h1>
+    <!-- ANATOMIA DE TABELAS GRANDES 
+        TABLE
+            THEAD 
+                TR, TD, TH
+            TBODY 
+                TR, TD, TH
+            TFOOT 
+                TR, TD, TH
+<<<<<<< HEAD
+
+    -->
+    <table>
+<!--=======================================================-->
+        <thead>
+            <th></th>
+                <th>Estado</th>
+                <th>População</th>
+        </thead>
+<!--=======================================================-->
+=======
+        SCOPE = dar sentido aos dados referente as colunas e linhas
+            scope = row e col 
+
+    -->
+    <table>
+        <caption>
+            População por Estados
+        </caption>
+        <!--=======================================================-->
+        <thead>
+            <th></th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 100px;">População</th>
+        </thead>
+        <!--=======================================================-->
+>>>>>>> 95648f0fb2c2214ac2a7183a44990d33685261e9
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>São Paulo</td>
+<<<<<<< HEAD
+                <td class="num">45 919 049</td>
+=======
+                <td class="num">65 919 049</td>
+>>>>>>> 95648f0fb2c2214ac2a7183a44990d33685261e9
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Minas Gerais</td>
+<<<<<<< HEAD
+                <td class="num">21 168 791</td>
+=======
+                <td class="num">41 168 791</td>
+>>>>>>> 95648f0fb2c2214ac2a7183a44990d33685261e9
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Rio de Janeiro</td>
+<<<<<<< HEAD
+                <td class="num">61 167 729</td>
+            </tr>
+        </tbody>
+<!--=======================================================-->        
+        <tfoot>
+            <tr>
+                <td></td>
+                <th>Total</th>
+                <td>0000</td>
+            </tr>
+        </tfoot>
+<!--=======================================================-->
+    </table>
+</body>
+=======
+                <td class="num">21 167 729</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mato Grosso</td>
+                <td class="num">5 937 257</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Rondônia</td>
+                <td class="num">1 777 657</td>
+            </tr>
+        </tbody>
+        <!--=======================================================-->
+        <tfoot>
+            <tr>
+                <td></td>
+                <th scope="row">Total</th>
+                <td>213 987 354</td>
+            </tr>
+        </tfoot>
+        <!--=======================================================-->
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum molestiae id repellendus, beatae
+        alias magnam deserunt nisi rerum repudiandae cupiditate nobis amet. Nulla minus quos porro voluptatum harum
+        voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ipsa? Iusto commodi dolores veniam
+        corporis aut excepturi, quis beatae. Assumenda id minus quibusdam labore maiores blanditiis sequi sapiente modi
+        facere. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit enim vero praesentium error corporis
+        aliquid, incidunt aut suscipit eos animi cum reprehenderit veniam nostrum a dicta, repudiandae maiores
+        blanditiis totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora hic laboriosam repudiandae
+        natus quam dolores ad ipsa atque ratione libero aliquam similique fugit molestias reprehenderit sit, deserunt
+        nam cupiditate totam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum molestiae id repellendus, beatae
+        alias magnam deserunt nisi rerum repudiandae cupiditate nobis amet. Nulla minus quos porro voluptatum harum
+        voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ipsa? Iusto commodi dolores veniam
+        corporis aut excepturi, quis beatae. Assumenda id minus quibusdam labore maiores blanditiis sequi sapiente modi
+        facere. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit enim vero praesentium error corporis
+        aliquid, incidunt aut suscipit eos animi cum reprehenderit veniam nostrum a dicta, repudiandae maiores
+        blanditiis totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora hic laboriosam repudiandae
+        natus quam dolores ad ipsa atque ratione libero aliquam similique fugit molestias reprehenderit sit, deserunt
+        nam cupiditate totam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatum molestiae id repellendus, beatae
+        alias magnam deserunt nisi rerum repudiandae cupiditate nobis amet. Nulla minus quos porro voluptatum harum
+        voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, ipsa? Iusto commodi dolores veniam
+        corporis aut excepturi, quis beatae. Assumenda id minus quibusdam labore maiores blanditiis sequi sapiente modi
+        facere. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit enim vero praesentium error corporis
+        aliquid, incidunt aut suscipit eos animi cum reprehenderit veniam nostrum a dicta, repudiandae maiores
+        blanditiis totam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora hic laboriosam repudiandae
+        natus quam dolores ad ipsa atque ratione libero aliquam similique fugit molestias reprehenderit sit, deserunt
+        nam cupiditate totam.</p>
+</body>
+
+>>>>>>> 95648f0fb2c2214ac2a7183a44990d33685261e9
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 7</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário 7</h1>
+    <h2>"select, datalist e textarea"</h2>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <label for="iest">País:</label>
+        <p>
+            <select name="est" id="iest">
+                <optgroup label="Ocidente">
+                    <option value="AS">Africa do Sul</option>
+                    <option value="BR">Brasil</option>
+                    <option value="CN">Canadá</option>
+                    <option value="EUA">Estados Unidos</option>
+                </optgroup>
+                <optgroup label="Oriente">
+                    <option value="CH">China</option>
+                    <option value="JP">Japão</option>
+                    <option value="AS">Asia</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administração</option>
+                <option>Arquiteto</option>
+                <option>Cozinheiro</option>
+                <option>Dentista</option>
+                <option>Desenvolvedor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Menssagem:</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
